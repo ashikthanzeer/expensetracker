@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="intro-bg-bottom-left"></div>
+        <div class="intro-bg-bottom-right"></div>
+        <div class="intro-bg-center"></div>
+        <div class="intro-bg-top-center"></div>
+        <div class="intro-bg-left-center"></div>
+        <div class="intro-bg-right-center"></div>
+        <div class="intro-bg-bottom-center"></div>
+        <div class="intro-content">
+            <h1 class="intro-title">EXPENSE<br>TRACKER</h1>
+            <p class="intro-subtitle">Track. Split. Manage. Your way.</p>
+            <button id="get-started-btn" class="get-started-btn">GET STARTED →</button>
+        </div>
+    </div>
+
+    <!-- Mode Selection Screen -->
+    <div id="mode-selection" class="mode-selection" style="display: none;">
+        <div class="mode-container">
+            <h1 class="mode-title">CHOOSE YOUR MODE</h1>
+            <p class="mode-subtitle">Select how you want to track your expenses</p>
+            
+            <div class="mode-cards">
+                <div class="mode-card" data-mode="personal">
+                    <div class="mode-number">01</div>
+                    <h3>Monthly Expense Tracker</h3>
+                    <p class="mode-description">Track your personal expenses month by month. Manage income, categories, and budgets.</p>
+                    <ul class="mode-features">
+                        <li>Category-wise breakdown</li>
+                        <li>Monthly income & expenses</li>
+                        <li>Budget limit tracking</li>
+                        <li>Month navigation</li>
+                    </ul>
+                    <button class="mode-btn">SELECT →</button>
+                </div>
+
+                <div class="mode-card" data-mode="group">
+                    <div class="mode-number">02</div>
+                    <h3>Group Expense Tracker</h3>
+                    <p class="mode-description">Split bills and expenses among friends. Track who owes whom and settle up easily.</p>
+                    <ul class="mode-features">
+                        <li>Multiple group members</li>
+                        <li>Smart expense splitting</li>
+                        <li>Automatic settlements</li>
+                        <li>Payment tracking</li>
+                    </ul>
+                    <button class="mode-btn">SELECT →</button>
+                </div>
+
+                <div class="mode-card" data-mode="trip">
+                    <div class="mode-number">03</div>
+                    <h3>Trip / Event Tracker</h3>
+                    <p class="mode-description">Perfect for one-time trips or events. Track all expenses and get final settlement summary.</p>
+                    <ul class="mode-features">
+                        <li>Trip-specific tracking</li>
+                        <li>Travel, food, stay categories</li>
+                        <li>Per-person cost breakdown</li>
+                        <li>Final settlement lock</li>
+                    </ul>
+                    <button class="mode-btn">SELECT →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
